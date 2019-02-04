@@ -2,7 +2,9 @@
   "name": "brain-games-podkovyrov",
   "version": "0.0.5",
   "description": "Console games (an educational project by hexlet.io)",
-  "main": "index.js",
+  "keywords": [
+    "console game"
+  ],
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
   },
