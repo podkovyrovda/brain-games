@@ -1,12 +1,13 @@
 {
   "name": "brain-games-podkovyrov",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Console games (an educational project by hexlet.io)",
   "keywords": [
     "console game"
   ],
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js"
   },
   "files": [
     "dist"
