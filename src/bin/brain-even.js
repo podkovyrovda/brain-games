@@ -1,7 +1,5 @@
 #!/usr/bin/env node
-import greeting from '..';
-import padding from '..';
-import isEven from '..';
+import { greeting, padding, isEven } from '..';
 
 console.log('Welcome to the Brain Games! ');
 
