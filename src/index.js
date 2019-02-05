@@ -1,16 +1,18 @@
 import readlineSync from 'readline-sync';
 
 const isEven = () => {
+  console.log('Welcome to the Brain Games! ');
   console.log('Answer "yes" if number even otherwise answer "no"\n');
 
   const userName = readlineSync.question('May I have your name? ');
 
   console.log(`Hello, ${userName}!`);
-  
+
   const numOfRounds = 3;
   for (let i = 1; i <= numOfRounds; i += 1) {
-    const getRandomNumInRange = () => Math.floor(Math.random() * endOfRange);
     const endOfRange = 1000;
+    const getRandomNumInRange = () => Math.floor(Math.random() * endOfRange);
+
 
     const num = getRandomNumInRange();
 
