@@ -1,34 +1,39 @@
 import readlineSync from 'readline-sync';
 
+const startOfRange = 0;
+const endOfRange = 1000;
+
+const getRandomNumInRange = () => Math.floor(Math.random() * (endOfRange - startOfRange + 1))
++ startOfRange;
+
+const numOfRounds = 3;
+
 const isEven = () => {
-  console.log('Welcome to the Brain Games! ');
+  console.log('Welcome to the Brain Games!');
   console.log('Answer "yes" if number even otherwise answer "no"\n');
 
   const userName = readlineSync.question('May I have your name? ');
 
   console.log(`Hello, ${userName}!`);
 
-  const numOfRounds = 3;
   for (let i = 1; i <= numOfRounds; i += 1) {
-    const endOfRange = 1000;
-    const getRandomNumInRange = () => Math.floor(Math.random() * endOfRange);
+    const question = getRandomNumInRange();
 
+    const userAnswer = readlineSync.question(`\nQuestion: ${question} \nYour answer: `);
 
-    const num = getRandomNumInRange();
+    let correctAnswer = '';
 
-    const userAnswer = readlineSync.question(`\nQuestion: ${num} \nYour answer: `);
+    if (question % 2 === 0) {
+      correctAnswer = 'yes';
+    } correctAnswer = 'no';
 
-    const correctAnswer = 'Correct!';
-    const correctAnswerWasYes = `'${userAnswer}' is wrong answer ;(. Correct answer was 'yes'. \nLet's try again, ${userName}`;
-    const correctAnswerWasNo = `'${userAnswer}' is wrong answer ;(. Correct answer was 'no'. \nLet's try again, ${userName}`;
-
-    if ((userAnswer === 'yes' && num % 2 === 0) || (userAnswer === 'no' && num % 2 !== 0)) {
-      console.log(correctAnswer);
-    } else if (num % 2 === 0) {
-      return console.log(correctAnswerWasYes);
-    } else return console.log(correctAnswerWasNo);
+    if (userAnswer !== correctAnswer) {
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \nLet's try again, ${userName}`);
+      i = numOfRounds;
+      return;
+    } console.log('Correct!');
   }
-  return console.log(`\nCongratulations, ${userName}!`);
+  console.log(`\nCongratulations, ${userName}!`);
 };
 
 export default isEven;
