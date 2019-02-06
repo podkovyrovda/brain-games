@@ -1,4 +1,3 @@
-.SILENT:
 install:
 	npm install
 
