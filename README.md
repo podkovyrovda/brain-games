@@ -6,7 +6,9 @@
 sudo npm i -g brain-games-podkovyrov
 ```
 
-### Using
+## How to play
 ```
-brain-games
+brain-even
 ```
+
+[![asciicast](https://asciinema.org/a/225501.svg)](https://asciinema.org/a/225501)
