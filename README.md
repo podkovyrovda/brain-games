@@ -12,3 +12,9 @@ brain-even
 ```
 
 [![asciicast](https://asciinema.org/a/225501.svg)](https://asciinema.org/a/225501)
+
+```
+brain-calc
+```
+
+[![asciicast](https://asciinema.org/a/3Kfc9PoQfefhStDJ6bmw4aDdZ.svg)](https://asciinema.org/a/3Kfc9PoQfefhStDJ6bmw4aDdZ)
