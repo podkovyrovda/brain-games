@@ -1,6 +1,5 @@
 import { cons } from 'hexlet-pairs';
-import getRandomNumInRange from '../modules/gerRandomNumInRange';
-import isEven from '../modules/isEven';
+import { getRandomNumInRange, isEven } from '../utils';
 import makeGame from '../engine';
 
 const greeting = 'Answer "yes" if number even otherwise answer "no"\n';
