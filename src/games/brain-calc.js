@@ -16,7 +16,7 @@ const condition = () => {
 
   const question = `${firstArgument} ${operator} ${secondArgument}`;
 
-  let correctAnswer = '';
+  let correctAnswer = 0;
   switch (operator) {
     case '+':
       correctAnswer = firstArgument + secondArgument;
