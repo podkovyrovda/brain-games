@@ -5,13 +5,14 @@
 ```
 sudo npm i -g brain-games-podkovyrov
 ```
+[![asciicast](https://asciinema.org/a/meZ8RLZjnZBiyHPjSTCyw7F6R.svg)](https://asciinema.org/a/meZ8RLZjnZBiyHPjSTCyw7F6R)
 
 ## How to play
 ```
 brain-even
 ```
 
-[![asciicast](https://asciinema.org/a/225501.svg)](https://asciinema.org/a/225501)
+[![asciicast](https://asciinema.org/a/3v4lAfd8EBE1FLoogEK8h9YzN.svg)](https://asciinema.org/a/3v4lAfd8EBE1FLoogEK8h9YzN)
 
 ```
 brain-calc
@@ -30,3 +31,9 @@ brain-progression
 ```
 
 [![asciicast](https://asciinema.org/a/pb7leLJvyhMf1I8YbCqvOFrhN.svg)](https://asciinema.org/a/pb7leLJvyhMf1I8YbCqvOFrhN)
+
+```
+brain-prime
+```
+
+[![asciicast](https://asciinema.org/a/qL3JYlmaGDvs7zR925qcGKfu1.svg)](https://asciinema.org/a/qL3JYlmaGDvs7zR925qcGKfu1)
