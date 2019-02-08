@@ -1,12 +1,22 @@
 import { cons } from 'hexlet-pairs';
-import { getRandomNumInRange, findGcd } from '../utils';
+import getRandomNumInRange from '../utils';
 import makeGame from '../engine';
 
-const greeting = 'Find the greatest common divisor of given numbers\n';
+const greeting = 'Find the greatest common divisor of given numbers';
+
+const startOfRange = 1;
+const endOfRange = 100;
+
+const findGcd = (a, b) => {
+  if (a === b) {
+    return a;
+  } if (a > b) {
+    return findGcd(a - b, b);
+  }
+  return findGcd(a, b - a);
+};
 
 const condition = () => {
-  const startOfRange = 1;
-  const endOfRange = 100;
   const firstNum = getRandomNumInRange(startOfRange, endOfRange);
   const secondNum = getRandomNumInRange(startOfRange, endOfRange);
 

@@ -1,16 +1,17 @@
 import { cons, car, cdr } from 'hexlet-pairs';
-import { getRandomNumInRange } from '../utils';
+import getRandomNumInRange from '../utils';
 import makeGame from '../engine';
 
-const greeting = 'What number is missing in the progression\n';
+const greeting = 'What number is missing in the progression';
+
+const startOfRange = 1;
+const endOfRange = 10;
+const elementsInProg = 10;
 
 const condition = () => {
-  const startOfRange = 1;
-  const endOfRange = 10;
   const startOfProg = getRandomNumInRange(startOfRange, endOfRange);
   const stepOfProg = getRandomNumInRange(startOfRange, endOfRange);
 
-  const elementsInProg = 10;
   const randomElem = getRandomNumInRange(1, elementsInProg);
 
   const getProgression = () => {

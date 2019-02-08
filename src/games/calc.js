@@ -1,16 +1,17 @@
 import { cons } from 'hexlet-pairs';
-import { getRandomNumInRange } from '../utils';
+import getRandomNumInRange from '../utils';
 import makeGame from '../engine';
 
-const greeting = 'What is the result of the expression?\n';
+const greeting = 'What is the result of the expression?';
+
+const startOfRange = 1;
+const endOfRange = 10;
+const operatorString = '+-*';
 
 const condition = () => {
-  const startOfRange = 1;
-  const endOfRange = 10;
   const firstArgument = getRandomNumInRange(startOfRange, endOfRange);
   const secondArgument = getRandomNumInRange(startOfRange, endOfRange);
 
-  const operatorString = '+-*';
   const randomPosition = getRandomNumInRange(0, operatorString.length - 1);
   const operator = operatorString[randomPosition];
 

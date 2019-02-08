@@ -25,4 +25,8 @@ brain-gcd
 
 [![asciicast](https://asciinema.org/a/7KyY22lDq0R8zIJFu5WOAcql8.svg)](https://asciinema.org/a/7KyY22lDq0R8zIJFu5WOAcql8)
 
+```
+brain-progression
+```
+
 [![asciicast](https://asciinema.org/a/pb7leLJvyhMf1I8YbCqvOFrhN.svg)](https://asciinema.org/a/pb7leLJvyhMf1I8YbCqvOFrhN)

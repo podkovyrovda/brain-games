@@ -4,6 +4,7 @@ import { car, cdr } from 'hexlet-pairs';
 export default (greeting, condition) => {
   console.log('Welcome to the Brain Games!');
   console.log(greeting);
+  console.log('');
 
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}`);
