@@ -15,7 +15,7 @@ export default (greeting, condition) => {
     const getCondition = condition();
 
     const question = car(getCondition);
-    const correctAnswer = cdr(getCondition);
+    const correctAnswer = String(cdr(getCondition));
 
     const userAnswer = readlineSync.question(`Question: ${question} \nYour answer: `);
 

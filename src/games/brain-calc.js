@@ -1,5 +1,5 @@
 import { cons } from 'hexlet-pairs';
-import getRandomNumInRange from '../utils';
+import { getRandomNumInRange } from '../utils';
 import makeGame from '../engine';
 
 const greeting = 'What is the result of the expression?\n';
@@ -19,13 +19,13 @@ const condition = () => {
   let correctAnswer = '';
   switch (operator) {
     case '+':
-      correctAnswer = String(firstArgument + secondArgument);
+      correctAnswer = firstArgument + secondArgument;
       break;
     case '-':
-      correctAnswer = String(firstArgument - secondArgument);
+      correctAnswer = firstArgument - secondArgument;
       break;
     default:
-      correctAnswer = String(firstArgument * secondArgument);
+      correctAnswer = firstArgument * secondArgument;
       break;
   }
   return cons(question, correctAnswer);
