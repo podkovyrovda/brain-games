@@ -8,8 +8,8 @@ const startOfRange = 1;
 const endOfRange = 100;
 
 const isPrime = (num) => {
-  if (num === 1 || num === 2 || num === 3) {
-    return true;
+  if (num < 2) {
+    return false;
   }
   for (let i = 2; i <= num / 2; i += 1) {
     if (num % i === 0) {

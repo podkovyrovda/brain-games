@@ -1,6 +1,8 @@
 import readlineSync from 'readline-sync';
 import { car, cdr } from 'hexlet-pairs';
 
+const numOfRounds = 3;
+
 export default (greeting, condition) => {
   console.log('Welcome to the Brain Games!');
   console.log(greeting);
@@ -10,13 +12,11 @@ export default (greeting, condition) => {
   console.log(`Hello, ${userName}`);
   console.log('');
 
-  const numOfRounds = 3;
-
   for (let i = 1; i <= numOfRounds; i += 1) {
-    const getCondition = condition();
+    const gameData = condition();
 
-    const question = car(getCondition);
-    const correctAnswer = String(cdr(getCondition));
+    const question = car(gameData);
+    const correctAnswer = cdr(gameData);
 
     const userAnswer = readlineSync.question(`Question: ${question} \nYour answer: `);
 

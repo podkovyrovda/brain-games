@@ -20,7 +20,7 @@ const condition = () => {
   const firstNum = getRandomNumInRange(startOfRange, endOfRange);
   const secondNum = getRandomNumInRange(startOfRange, endOfRange);
 
-  const correctAnswer = findGcd(firstNum, secondNum);
+  const correctAnswer = String(findGcd(firstNum, secondNum));
   const question = `${firstNum} ${secondNum}`;
 
   return cons(question, correctAnswer);

@@ -20,13 +20,13 @@ const condition = () => {
   let correctAnswer = '';
   switch (operator) {
     case '+':
-      correctAnswer = firstArgument + secondArgument;
+      correctAnswer = String(firstArgument + secondArgument);
       break;
     case '-':
-      correctAnswer = firstArgument - secondArgument;
+      correctAnswer = String(firstArgument - secondArgument);
       break;
     default:
-      correctAnswer = firstArgument * secondArgument;
+      correctAnswer = String(firstArgument * secondArgument);
       break;
   }
   return cons(question, correctAnswer);
