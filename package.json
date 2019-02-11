@@ -1,6 +1,6 @@
 {
   "name": "brain-games-podkovyrov",
-  "version": "2.4.4",
+  "version": "2.4.5",
   "description": "Console games (an educational project by hexlet.io)",
   "keywords": [
     "console game"
@@ -35,9 +35,7 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.13.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.16.0",
-    "hexlet-pairs": "^1.0.8",
-    "readline-sync": "^1.4.9"
+    "eslint-plugin-import": "^2.16.0"
   },
   "dependencies": {
     "hexlet-pairs": "^1.0.8",

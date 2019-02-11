@@ -8,7 +8,7 @@ const startOfRange = 1;
 const endOfRange = 10;
 const elementsInProg = 10;
 
-const getProgression = (startOfProg, stepOfProg, missingNumPosition) => {
+const getProgression = (startOfProg, stepOfProg, elementsInProg, missingNumPosition) => {
   let strOfProg = '';
 
   for (let i = 0; i < elementsInProg; i += 1) {
@@ -23,7 +23,7 @@ const condition = () => {
   const stepOfProg = getRandomNumInRange(startOfRange, endOfRange);
   const missingNumPosition = getRandomNumInRange(0, elementsInProg - 1);
 
-  const question = getProgression(startOfProg, stepOfProg, missingNumPosition);
+  const question = getProgression(startOfProg, stepOfProg, elementsInProg, missingNumPosition);
   const correctAnswer = String(startOfProg + missingNumPosition * stepOfProg);
 
   return cons(question, correctAnswer);
