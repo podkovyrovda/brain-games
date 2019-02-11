@@ -24,7 +24,7 @@ const condition = () => {
   const missingNumPosition = getRandomNumInRange(0, elementsInProg - 1);
 
   const question = getProgression(startOfProg, stepOfProg, missingNumPosition);
-  const correctAnswer = String(startOfProg + (missingNumPosition) * stepOfProg);
+  const correctAnswer = String(startOfProg + missingNumPosition * stepOfProg);
 
   return cons(question, correctAnswer);
 };
