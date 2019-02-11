@@ -1,4 +1,4 @@
-import { cons, car, cdr } from 'hexlet-pairs';
+import { cons } from 'hexlet-pairs';
 import getRandomNumInRange from '../utils';
 import makeGame from '../engine';
 
