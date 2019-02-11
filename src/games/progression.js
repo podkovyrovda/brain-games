@@ -8,30 +8,23 @@ const startOfRange = 1;
 const endOfRange = 10;
 const elementsInProg = 10;
 
-const getProgression = () => {
-  const startOfProg = getRandomNumInRange(startOfRange, endOfRange);
-  const stepOfProg = getRandomNumInRange(startOfRange, endOfRange);
-
-  const missingNumPosition = getRandomNumInRange(0, elementsInProg - 1);
-
-  let numInProg = 0;
+const getProgression = (startOfProg, stepOfProg, missingNumPosition) => {
   let strOfProg = '';
-  let missingNum = 0;
 
   for (let i = 0; i < elementsInProg; i += 1) {
-    if (i === missingNumPosition) {
-      missingNum = numInProg + stepOfProg;
-      numInProg = '..';
-    } else numInProg = startOfProg + stepOfProg * i;
-    strOfProg += `${numInProg} `;
+    strOfProg += (i === missingNumPosition) ? '.. ' : `${startOfProg + stepOfProg * i} `;
   }
-  return cons(strOfProg, missingNum);
+
+  return strOfProg.trim();
 };
 
 const condition = () => {
-  const progression = getProgression();
-  const correctAnswer = String(cdr(progression));
-  const question = car(progression);
+  const startOfProg = getRandomNumInRange(startOfRange, endOfRange);
+  const stepOfProg = getRandomNumInRange(startOfRange, endOfRange);
+  const missingNumPosition = getRandomNumInRange(0, elementsInProg - 1);
+
+  const question = getProgression(startOfProg, stepOfProg, missingNumPosition);
+  const correctAnswer = String(startOfProg + (missingNumPosition) * stepOfProg);
 
   return cons(question, correctAnswer);
 };
